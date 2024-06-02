@@ -56,7 +56,7 @@ padding-bottom: 7px;}
 }
 /* parte do Menu */
 .menu{
-    flex: 3;
+    flex: 4;
 }
 nav{
     display: flex;
@@ -85,7 +85,6 @@ text-transform: uppercase;
     border-bottom: #12420a solid 3px;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
 }
 .menu li:hover {
     background: #0e3a07;
@@ -95,77 +94,66 @@ li:hover a{
     color:rgb(255, 255, 255);
     font-weight: bolder;
 }
-/* parte do corpo da pagina */
-.corpos {
+/* Iniciando o corpo */
+.text{
     display: flex;
-    flex-direction: row;
-    height: calc(100vh - 150px);
-    transition: all ease .4s;
-    width: 300vw;
+    flex-wrap: wrap;
+    width: 95vw;
+    font-size: calc(1.5vw + 2vh);
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
 }
 .corpo{
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapa{
+    width: 45vw;
+    height: 300px;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.corpos{
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
-.corpo .imgMascote{
-    background: #39ea1a;
-    flex:1
-}
-.corpo .text{
-    flex:1;
-    background: rgb(255, 255, 255);
-    flex-wrap: wrap;
-    overflow-y: auto;
-}
-.corpo .text h3{
-    margin-left: 20px;
-    width: 90%;
-    font-size: 20px;
-    text-align: justify;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-}
-.corpo .text h1{
-width: 95%;
-text-align: center;
-}
-.corpo .text li {
-    list-style: none;
-    padding-left: 15px;
-    color: rgb(0, 0, 0);
-    padding-bottom: 5px;
-    text-align: justify;
-    padding-right: 5px;
-    line-height: .9;
-    font-size: 1.2em;
-    width: 90%;
-
-}
-.campoCorpos{
-    overflow-x: hidden;
-    width: 100vw;
-}
-.proximo{
-    color: rgb(6, 92, 62);
+.dados{
+    width: 30vw;
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+.nome{
+    color: rgb(249, 255, 255);
+    font-size: 30px;
+}
+.descricao{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.lixos{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     justify-content: center;
-    align-items: end;
-    text-align: center;
-}
-.proximo p{
-    background: rgb(241, 226, 226);
-    border-bottom: #000000 double 5px;
-    padding: 10px ;
-    border-radius: 4px;
-    text-align: center;
-    padding-bottom: 5px;
-    cursor: pointer;
-    width: 40px;
-    padding-bottom: 4px;
-}
 
+}
+.lixos li{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(53, 255, 120);
+}
+.tiposDeLixo{
+    width: 100%;
+}
 @media (max-width:900px) {
     .abrirMenu{
         display: block;
@@ -179,14 +167,17 @@ text-align: center;
      .menu{
         display: none;
         }
-        .corpo{
+        .nome{
+            color: rgb(249, 255, 255);
+            font-size: 16px;
+        }
+        .dados{
+            width: 90%;
+        }
+        .corpos{
             flex-direction: column;
         }
-        body{
-            overflow-x: hidden;        
-        }
-        .corpo .text h3{
-            font-size: 18px;
-            text-align: justify;
+        .mapa{
+            width: 100vw;
         }
 }
