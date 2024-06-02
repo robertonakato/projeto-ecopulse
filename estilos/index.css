@@ -1,0 +1,123 @@
+body{
+    background: radial-gradient(circle, rgba(10,66,52,1) 0%, rgba(10,66,52,1) 30%, rgba(0,0,0,1) 100%);
+    overflow-x: hidden;
+
+}
+/* Iniciando o cabecario e menu */
+.cabecario{ 
+    background: #ffffff;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    flex: 1;
+    height: 150px;
+    }
+.logo img{
+    width: 200px;
+    height: 100%;
+}
+/* parte do Menu */
+.menu{
+    flex: 3;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: end;
+}
+.cabecario a{
+text-decoration: none;
+color: #000000;
+text-transform: uppercase;
+}
+.cabecario ul {
+    list-style: none;
+  
+}
+.cabecario li{
+    background: #39ea1a;
+    padding: 7px;
+    border-bottom: #12420a solid 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cabecario li:hover {
+    background: #0e3a07;
+}
+li:hover a{
+    background: #0e3a07;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+}
+/* parte do corpo da pagina */
+.corpos{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 150px);
+    width: 300vw;
+    transition: all ease .4s;
+
+}
+.corpo{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.corpo .imgMascote{
+    background: #39ea1a;
+    flex:1
+}
+.corpo .text{
+    flex:1
+}
+.corpo .text li {
+    list-style: none;
+    padding-left: 15px;
+    color: bisque;
+    padding-bottom: 5px;
+    text-align: justify;
+    padding-right: 5px;
+    line-height: .9;
+    font-size: 1.2em;
+}
+.proximo{
+    position: fixed;
+    z-index: 3;
+    color: beige;
+    width: 100vw;
+    height:calc( 100vh - 150px) ;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: -30px;
+}
+.proximo p{
+    height: 30px;
+    background: red;
+    border-bottom: #000000 double 5px;
+    padding: 10px ;
+    border-radius: 4px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+@media (max-width:840px) {
+    .logo{
+        width: 5.5rem;
+        flex: 3;}
+     .menu{
+        display: none;
+        }
+        .corpo{
+            flex-direction: column;
+        }
+        body{
+            overflow-x: hidden;        
+        }
+}
