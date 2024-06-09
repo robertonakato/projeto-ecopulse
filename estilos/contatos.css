@@ -1,5 +1,3 @@
-
-
 body{
     background: radial-gradient(circle, rgba(10,66,52,1) 0%, rgba(10,66,52,1) 30%, rgba(0,0,0,1) 100%);
     overflow-x: hidden; /* Impede a rolagem horizontal */
@@ -84,7 +82,6 @@ text-transform: uppercase;
     border-bottom: #12420a solid 3px;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
 }
 .menu li:hover {
     background: #0e3a07;
@@ -94,79 +91,22 @@ li:hover a{
     color:rgb(255, 255, 255);
     font-weight: bolder;
 }
-/* parte do corpo da pagina */
-.corpos {
-    display: flex;
-    flex-direction: row;
-    height: calc(100vh - 150px);
-    transition: all ease .4s;
-    width: 300vw;
-}
-.corpo{
+/* programando o corpo do site*/
+.contatos{
+    margin-top: 30px;
     width: 100vw;
     display: flex;
-    flex-direction: row;
-}
-.corpo .imgMascote{
-    background: #39ea1a;
-    flex:1
-}
-.corpo .imgMascote img{
-    height: 100%;
-    width: 100%;
-}
-.corpo .text{
-    flex:1;
-    background: rgb(255, 255, 255);
-    flex-wrap: wrap;
-    overflow-y: auto;
-}
-.corpo .text h3{
-    margin-left: 20px;
-    width: 90%;
-    font-size: 20px;
-    text-align: justify;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-}
-.corpo .text h1{
-width: 95%;
-text-align: center;
-}
-.corpo .text li {
-    list-style: none;
-    padding-left: 15px;
-    color: rgb(0, 0, 0);
-    padding-bottom: 5px;
-    text-align: justify;
-    padding-right: 5px;
-    line-height: .9;
-    font-size: 1.2em;
-    width: 90%;
-
-}
-.campoCorpos{
-    overflow-x: hidden;
-    width: 100vw;
-}
-.proximo{
-    color: rgb(6, 92, 62);
-    display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
     text-align: center;
 }
-.proximo p{
-    background: rgb(241, 226, 226);
-    border-bottom: #000000 double 5px;
-    padding: 10px ;
-    border-radius: 4px;
-    text-align: center;
-    padding-bottom: 5px;
-    cursor: pointer;
-    width: 40px;
-    padding-bottom: 4px;
+.contatos p {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contatos img{
+    width: 100px;
+    height: 100px;
 }
 
 @media (max-width:900px) {
@@ -182,20 +122,4 @@ text-align: center;
      .menu{
         display: none;
         }
-        .corpo{
-            flex-direction: column;
-        }
-        body{
-            overflow-x: hidden;        
-        }
-        .corpo .text h3{
-            font-size: 18px;
-            text-align: justify;
-        }
-}
-
-@media (min-aspect-ratio: 1/1){
-    .corpo{
-        flex-direction: row;
     }
-}
