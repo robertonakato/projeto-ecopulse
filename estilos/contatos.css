@@ -108,6 +108,31 @@ li:hover a{
     width: 100px;
     height: 100px;
 }
+/* programando o formulário*/
+.formulario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: #0dc43e;
+    align-items: center;
+    
+}
+input{
+    width: 80%;
+    padding: 5px;
+    margin: 2px;
+}
 
 @media (max-width:900px) {
     .abrirMenu{
@@ -121,5 +146,8 @@ li:hover a{
         flex: 3;}
      .menu{
         display: none;
+        }
+        form {
+            width: 60%;
         }
     }
